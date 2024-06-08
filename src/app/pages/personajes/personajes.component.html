@@ -1,0 +1,11 @@
+<h2>Personajes</h2>
+<div [formGroup]="form">
+    <label for="">Seleccionar personaje</label>
+    <select name="" formControlName="personaje">
+        @for (item of data; track item.id) {
+        <option value="{{ item.img }}">{{ item.name }}</option>
+        }
+    </select>
+</div>
+
+<app-mostrar-personaje img="{{ form.value.personaje }}"></app-mostrar-personaje>

@@ -1,0 +1,16 @@
+<div [formGroup]="form">
+    <div>
+        <label for="">Grados</label>
+        <input type="number" formControlName="grados">
+    </div>
+
+    <div>
+        <label for="">Tipo</label>
+        <select name="" formControlName="tipo">
+            <option value="c">Celcius</option>
+            <option value="f">Fahrenheit</option>
+        </select>
+    </div>
+
+    <button (click)="guardar()">Guardar</button>
+</div>

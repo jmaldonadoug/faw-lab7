@@ -1,0 +1,16 @@
+<h2>Conversiones</h2>
+
+<app-crear-temp (guardarEvent)="getForm($event)" />
+
+<table>
+    <tr>
+        <th>Celcius</th>
+        <th>Fahrenheit</th>
+    </tr>
+    @for (item of data; track $index) {
+        <tr>
+            <td>{{ item.c }}</td>
+            <td>{{ item.f }}</td>
+        </tr>
+    }
+</table>
